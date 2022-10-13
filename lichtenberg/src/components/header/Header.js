@@ -9,7 +9,9 @@ const Header = () => {
   const [weatherData, setWeatherData] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [errorHapp, setErrorHap] = useState(false);
 
+  /*fetch weather data and load the response before the weather widget mounted */
   useEffect(() => {
     async function fetchWeatherData() {
       setIsLoading(true);
@@ -21,7 +23,7 @@ const Header = () => {
           "https://api.openweathermap.org/data/2.5/weather?lat=50.8999&lon=7.7050&appid=cfd8bbd90717c730eebe3ed61c0322dd&units=metric&lang=de"
         );
         if (!response) {
-          throw new Error("Something went wrong");
+          throw new error("");
         }
         const data = await response.json();
         console.log(data);
@@ -29,10 +31,12 @@ const Header = () => {
         setWeatherData(data);
         setIsLoading(false);
       } catch (error) {
-        setError(error.message);
+        setError("Something went wrong");
+        setErrorHap(true);
       }
 
-      console.log(weatherData);
+      console.log(error);
+      setErrorHap(false);
     }
     fetchWeatherData();
   }, []);
@@ -75,6 +79,7 @@ const Header = () => {
           onWeatherData={weatherData}
           onIsLoading={isLoading}
           onError={error}
+          onErrorHap={errorHapp}
         />
       )}
     </header>
