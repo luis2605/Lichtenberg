@@ -1,0 +1,1 @@
+using https://home.openweathermap.org/ for the weather api
