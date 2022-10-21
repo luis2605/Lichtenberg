@@ -3,6 +3,9 @@ import { Route, Routes, Link } from "react-router-dom";
 import logo from "../../assets/img/Logo-Lichtenberg.png";
 import classes from "./header.module.css";
 import WeatherWidget from "./auxComp/WeatherWidget";
+import * as WiIcons from "react-icons/wi";
+import { BiCaretUp } from "react-icons/bi";
+import sidebarData from "../../data/sideBarData";
 
 const Header = () => {
   const [weatherShown, setWeatherShown] = useState(false);
@@ -10,6 +13,11 @@ const Header = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [errorHapp, setErrorHap] = useState(false);
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const [sidebarLinks, setSidebarLinks] = useState(sidebarData);
+  const [isScrolledDown, setIsScrolledDown] = useState(false);
 
   /*fetch weather data and load the response before the weather widget mounted */
   useEffect(() => {
@@ -40,49 +48,119 @@ const Header = () => {
     }
     fetchWeatherData();
   }, []);
+  /* show scroll btn to go up */
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      console.log("window.scrollY", window.scrollY);
+      if (window.scrollY > 50) {
+        setIsScrolledDown((prevScrolled) => true);
+        console.log(isScrolledDown);
+      } else setIsScrolledDown((prevScrolled) => false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isScrolledDown]);
+
   console.log(weatherData);
+
   const showWeather = () => {
     setWeatherShown((prev) => {
       return !prev;
     });
   };
+  /* open the hamburguer menu  */
+  const openCloseMenu = () => {
+    setMenuOpen((prev) => {
+      return !prev;
+    });
+  };
+  /* map the sidebarLinks */
+  console.log(sidebarLinks);
+  const sideBar = sidebarLinks.map((bar, index) => {
+    return (
+      <li className={classes["sidebar-elements"]} key={index}>
+        <span className={classes["sidebar-icon"]}>{bar.icon}</span>
+        <Link to={bar.ref}>{bar.name} </Link>
+      </li>
+    );
+  });
   return (
-    <header>
-      <img className={classes["header_logo"]} src={logo} alt="logo"></img>
-      <nav>
-        <ul className={classes["header_nav-list"]}>
-          <li>
-            <Link to="/"> Startseite </Link>
-          </li>
-          <li>
-            <Link to="/über"> Über uns </Link>
-          </li>
-          <li>
-            <Link to="/spenden"> Spenden </Link>
-          </li>
-          <li>
-            <Link to="/aktuelles"> Aktuelles </Link>
-          </li>
-          <li>
-            <Link to="/kontakt"> Kontakt </Link>
-          </li>
-          <li>
-            <span onClick={showWeather} class="material-symbols-outlined">
-              nest_farsight_weather
-            </span>
-          </li>
-        </ul>
-      </nav>
-
-      {weatherShown && (
-        <WeatherWidget
-          onWeatherData={weatherData}
-          onIsLoading={isLoading}
-          onError={error}
-          onErrorHap={errorHapp}
-        />
+    <>
+      <header className={isScrolledDown ? classes["transparent"] : ""}>
+        <img className={classes["header_logo"]} src={logo} alt="logo"></img>
+        <nav>
+          <ul className={classes["header_nav-list"]}>
+            <li className={classes["header_nav-element"]}>
+              <Link to="/"> Startseite </Link>
+            </li>
+            <li>
+              <Link to="/über"> Über uns </Link>
+            </li>
+            <li>
+              <Link to="/spenden"> Spenden </Link>
+            </li>
+            <li>
+              <Link to="/aktuelles"> Aktuelles </Link>
+            </li>
+            <li>
+              <Link to="/kontakt"> Kontakt </Link>
+            </li>
+          </ul>
+          <span onClick={showWeather} className={classes["weather-btn"]}>
+            <WiIcons.WiDaySunnyOvercast />
+          </span>
+        </nav>
+        {weatherShown && (
+          <WeatherWidget
+            onWeatherData={weatherData}
+            onIsLoading={isLoading}
+            onError={error}
+            onErrorHap={errorHapp}
+          />
+        )}
+        <div onClick={openCloseMenu} className={classes["hamburger-lines"]}>
+          <span
+            className={
+              menuOpen
+                ? `${classes.line} ${classes.line1trans}`
+                : `${classes.line} ${classes.line1}`
+            }
+          ></span>
+          <span
+            className={
+              menuOpen
+                ? `${classes.line} ${classes.line2trans}`
+                : `${classes.line} ${classes.line2}`
+            }
+          ></span>
+          <span
+            className={
+              menuOpen
+                ? `${classes.line} ${classes.line3trans}`
+                : `${classes.line} ${classes.line3}`
+            }
+          ></span>
+        </div>
+        {menuOpen && (
+          <div className={classes["sidebar-container"]}>
+            <nav>
+              <ul className={classes["sidebar-list"]}>{sideBar}</ul>
+            </nav>
+          </div>
+        )}
+      </header>
+      {isScrolledDown && (
+        <div className={classes["arrow-goUp"]}>
+          <a href="/">
+            <BiCaretUp />
+          </a>
+        </div>
       )}
-    </header>
+    </>
   );
 };
 

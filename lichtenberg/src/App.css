@@ -6,8 +6,12 @@
 a {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 :root {
   --primary-text-color: rgba(0, 0, 0, 0.6);
   --sec-text-color: rgba(243, 209, 55, 0.932);
   --white-text: rgba(255, 255, 255, 0.979);
+  --sec-text-color-nt: rgb(243, 209, 55);
 }

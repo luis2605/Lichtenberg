@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import classes from "./weatherWidget.module.css";
+import * as WiIcons from "react-icons/wi";
 
 const WeatherWidget = ({ onWeatherData, onIsLoading, onError, onErrorHap }) => {
   return (
@@ -26,38 +27,38 @@ const WeatherWidget = ({ onWeatherData, onIsLoading, onError, onErrorHap }) => {
         </div>
       )}
       {!onErrorHap && (
-        <>
+        <div className={classes["weather-elements-container"]}>
           <div className={classes["weather-elements"]}>
             <span className={classes["contrast-color"]}>
-              <span class="material-symbols-outlined">thermostat</span>
+              <WiIcons.WiThermometer />
             </span>{" "}
             <p>{onWeatherData.main.temp} &#8451;</p>
           </div>
           <div className={classes["weather-elements"]}>
             <span className={classes["contrast-color"]}>
-              <span class="material-symbols-outlined">humidity_low</span>
+              <WiIcons.WiHumidity />
             </span>
             <p>{onWeatherData.main.humidity} %</p>
           </div>
           <div className={classes["weather-elements"]}>
             <span className={classes["contrast-color"]}>
-              <span class="material-symbols-outlined">cloudy</span>
+              <WiIcons.WiCloudy />
             </span>
             <p>{onWeatherData.clouds.all} %</p>
           </div>
           <div className={classes["weather-elements"]}>
             <span className={classes["contrast-color"]}>
-              <span class="material-symbols-outlined">storm</span>
+              <WiIcons.WiBarometer />
             </span>
             <p>{onWeatherData.main.pressure} hPa</p>
           </div>
           <div className={classes["weather-elements"]}>
             <span className={classes["contrast-color"]}>
-              <span class="material-symbols-outlined">air</span>
+              <WiIcons.WiStrongWind />
             </span>
             <p>{onWeatherData.wind.speed} m/s</p>
           </div>
-        </>
+        </div>
       )}
     </div>
   );
