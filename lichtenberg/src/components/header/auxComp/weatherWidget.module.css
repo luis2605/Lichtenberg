@@ -3,7 +3,7 @@
   width: 200px;
   left: 0;
   top: 125%;
-  background: var(--sec-text-color);
+  background: var(--primary-bkg-color);
   padding: 1em 2em;
   border-radius: 0 15px 15px 0;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -38,7 +38,7 @@
     box-shadow: none;
     font-size: 0.7rem;
     clip-path: polygon(0% 0%, 95% 0%, 55% 100%, 0% 100%);
-    background: white;
+    background: var(--primary-bkg-color);
   }
   .weather-title {
     font-size: 0.6rem;

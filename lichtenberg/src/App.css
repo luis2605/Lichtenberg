@@ -11,7 +11,10 @@ li {
 }
 :root {
   --primary-text-color: rgba(0, 0, 0, 0.6);
-  --sec-text-color: rgba(243, 209, 55, 0.932);
-  --white-text: rgba(255, 255, 255, 0.979);
-  --sec-text-color-nt: rgb(243, 209, 55);
+  --sec-text-color: rgba(255, 255, 255, 0.979);
+  --primary-bkg-color: #ffc107;
+  --sec-bkg-color: #a3c9a8;
+  --ter-bkg-color: #84b59f;
+  --qua-bkg-color: #69a297;
+  --quin-bkg-color: #50808e;
 }

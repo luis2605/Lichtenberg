@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import logo from "../../assets/img/Logo-Lichtenberg.png";
+import logo from "../../assets/img/Logo-web.png";
 import classes from "./header.module.css";
 import WeatherWidget from "./auxComp/WeatherWidget";
 import * as WiIcons from "react-icons/wi";
@@ -90,7 +90,7 @@ const Header = () => {
   });
   return (
     <>
-      <header className={isScrolledDown ? classes["transparent"] : ""}>
+      <header className={isScrolledDown ? "" : classes["transparent"]}>
         <img className={classes["header_logo"]} src={logo} alt="logo"></img>
         <nav>
           <ul className={classes["header_nav-list"]}>
@@ -110,7 +110,14 @@ const Header = () => {
               <Link to="/kontakt"> Kontakt </Link>
             </li>
           </ul>
-          <span onClick={showWeather} className={classes["weather-btn"]}>
+          <span
+            onClick={showWeather}
+            className={
+              isScrolledDown
+                ? classes["weather-btn"]
+                : `${classes["weather-btn"]} ${classes["weather-btn__scrolled"]}`
+            }
+          >
             <WiIcons.WiDaySunnyOvercast />
           </span>
         </nav>
@@ -154,7 +161,7 @@ const Header = () => {
         )}
       </header>
       {isScrolledDown && (
-        <div className={classes["arrow-goUp"]}>
+        <div className={menuOpen ? classes["none"] : classes["arrow-goUp"]}>
           <a href="/">
             <BiCaretUp />
           </a>
