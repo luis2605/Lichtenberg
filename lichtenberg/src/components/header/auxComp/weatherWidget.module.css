@@ -16,7 +16,7 @@
 
 .weather-elements {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .weather-elements p {
   margin-left: 1em;
@@ -36,9 +36,15 @@
     height: 200px;
     border-radius: 0;
     box-shadow: none;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     clip-path: polygon(0% 0%, 95% 0%, 55% 100%, 0% 100%);
     background: var(--primary-bkg-color);
+  }
+  .weather-elements-container :nth-child(4) {
+    display: none;
+  }
+  .weather-elements-container :nth-child(5) {
+    display: none;
   }
   .weather-title {
     font-size: 0.6rem;

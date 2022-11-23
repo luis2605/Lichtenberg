@@ -94,20 +94,56 @@ const Header = () => {
         <img className={classes["header_logo"]} src={logo} alt="logo"></img>
         <nav>
           <ul className={classes["header_nav-list"]}>
-            <li className={classes["header_nav-element"]}>
-              <Link to="/"> Startseite </Link>
+            <li>
+              <div className={classes["glitch-wrapper"]}>
+                <div
+                  className={`${classes["glitch"]} ${classes.g0}`}
+                  data-glitch="Startseite"
+                >
+                  <Link to="/"> Startseite </Link>
+                </div>
+              </div>
             </li>
             <li>
-              <Link to="/über"> Über uns </Link>
+              <div className={classes["glitch-wrapper"]}>
+                <div
+                  className={`${classes["glitch"]} ${classes.g1}`}
+                  data-glitch="glitch"
+                >
+                  <Link to="/über"> Über uns </Link>
+                </div>
+              </div>
             </li>
             <li>
-              <Link to="/spenden"> Spenden </Link>
+              <div className={classes["glitch-wrapper"]}>
+                <div
+                  className={`${classes["glitch"]} ${classes.g2}`}
+                  data-glitch="Spenden "
+                >
+                  <Link to="/spenden"> Spenden </Link>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div className={classes["glitch-wrapper"]}>
+                <div
+                  className={`${classes["glitch"]} ${classes.g3}`}
+                  data-glitch="Über uns"
+                >
+                  <Link to="/aktuelles"> Aktuelles </Link>
+                </div>
+              </div>
             </li>
             <li>
-              <Link to="/aktuelles"> Aktuelles </Link>
-            </li>
-            <li>
-              <Link to="/kontakt"> Kontakt </Link>
+              <div className={classes["glitch-wrapper"]}>
+                <div
+                  className={`${classes["glitch"]} ${classes.g4}`}
+                  data-glitch="Über uns"
+                >
+                  <Link to="/kontakt"> Kontakt </Link>
+                </div>
+              </div>
             </li>
           </ul>
           <span

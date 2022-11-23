@@ -1,0 +1,6 @@
+.carousel-item img {
+  height: 100vh;
+  object-fit: fill;
+  border-bottom: 5px solid var(--sec-bkg-color);
+  clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
+}

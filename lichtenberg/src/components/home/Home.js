@@ -1,12 +1,15 @@
 import React from "react";
-import { IntroCarrousel } from "../carrousel/IntroCarrousel";
-import Joke from "../joke/Joke";
+import ImgSlider from "../carousel/ImgSlider";
+import Intro from "../intro/Intro";
+import ZuUns from "../zuUns/ZuUns";
+import classes from "./home.module.css";
 
 export const Home = () => {
   return (
-    <div>
-      <IntroCarrousel></IntroCarrousel>
-      <Joke></Joke>
+    <div className={classes["home-container"]}>
+      <ImgSlider />
+      <Intro />
+      <ZuUns />
     </div>
   );
 };

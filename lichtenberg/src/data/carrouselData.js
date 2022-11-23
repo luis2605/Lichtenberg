@@ -4,7 +4,7 @@ import img3 from "../assets/img/carrousel-img/Lichtenberg vom Kran_10.05.2011_01
 import img4 from "../assets/img/carrousel-img/Lichtenberg_05.05.2014_015CBuchen.webp";
 import img5 from "../assets/img/carrousel-img/Rundflug v.Katzwinkel_07.09.2014_122FotoCBuchen.webp";
 
-export const carrouselData = [
+const carrouselData = [
   {
     img: img1,
     text: "St. Joseph - Lichtenberg",
@@ -31,3 +31,4 @@ export const carrouselData = [
     sub: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet bibendum dignissim. Integer tellus ipsum, laoreet vel lacus ut, pellentesque varius est. Aenean at erat.",
   },
 ];
+export default carrouselData;
