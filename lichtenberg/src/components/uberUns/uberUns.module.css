@@ -28,7 +28,8 @@
     width: 400px;
 }
 .uber-uns-intro_image img{
-    width: 95px;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+    width: 100px;
     border-radius: 50%;
     position: relative;
     top: 70px;
@@ -37,6 +38,8 @@
     transform: rotate(13deg);
     outline: 4px dashed var(--logo-dgreen);
     outline-offset: 3px;
+   
+   
 
 }
 .infografik{
@@ -178,8 +181,7 @@ box-shadow: 7.5px 4px 13px -5.5px #000000;
  
   .uber-uns-intro_image img{
 
-    outline: none !important;
-    outline-offset: 0 !important;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 
 }
 }

@@ -93,7 +93,8 @@ const Header = () => {
   const sideBar = sidebarLinks.map((bar, index) => {
     return (
       <li className={classes["sidebar-elements"]} key={index}>
-        <span className={classes["sidebar-icon"]}>{bar.icon}</span>
+        {/* <span className={classes["sidebar-icon"]}>{bar.icon}</span> */}
+        <img src={bar.imgSource} alt={bar.title} className={classes["sidebar-icon"]}   />
         <Link onClick={scrollUp} to={bar.ref}>{bar.name} </Link>
       </li>
     );
