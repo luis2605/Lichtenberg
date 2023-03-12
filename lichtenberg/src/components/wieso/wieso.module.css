@@ -16,6 +16,15 @@
   grid-template-areas: "lu ru"
                        "ld rd";
 }
+.wieso-more{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.see-more {
+  width:40px;
+  cursor: pointer;
+}
 .wieso-points{
   display: flex;
   margin: 1em 2em;

@@ -105,7 +105,7 @@ const Header = () => {
     <>
       <header className={isScrolledDown ? "" : classes["transparent"]}>
       
-        <img className={classes["header_logo"]} src={logo} alt="logo"></img>
+      <Link  className={classes["header_link"]} onClick={scrollUp} to="/"> <img className={classes["header_logo"]} src={logo} alt="logo"></img></Link>
         <nav >
           <ul className={classes["header_nav-list"]}>
             <li > 
