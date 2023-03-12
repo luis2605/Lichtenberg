@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 a {
   text-decoration: none !important;
 }
@@ -19,7 +24,17 @@ li {
   --arrow: #23310c;
   --logo-lgreen: #93a73b;
   --logo-dgreen: #38462d;
+  --form-control-color: #f3a62a;
 }
 .mega-container {
   background-color: #fca21193;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1005;
 }

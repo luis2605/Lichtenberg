@@ -3,4 +3,28 @@
   object-fit: fill;
   border-bottom: 5px solid var(--sec-bkg-color);
   clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
+  z-index: -100;
 }
+.caption-container{
+ background-color:whitesmoke;
+ color:black ;
+ font-size: 1.3rem;
+ padding: 1em 2em;
+ position: absolute;
+ right: 60%;
+ bottom:5em;
+ clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
+ font-family: "Oswald", sans-serif;
+}
+.caption-title{
+  color:var( --primary-bkg-color) ;
+  font-size: 1.5rem;
+}
+
+/*media queries*/
+
+@media (max-width: 585px) {
+  .caption-container{
+position: initial;
+  }
+  }

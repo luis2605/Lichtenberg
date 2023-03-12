@@ -1,0 +1,64 @@
+.mitglied-container{
+    padding: 15em 0 0 0;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.mitglied-title{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.3rem;
+    padding: 1em 2em;
+    clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
+    font-family: "Oswald", sans-serif;
+    border: 8px solid var(--primary-bkg-color);
+    max-width: 400px;
+}
+.mitglied-img{
+    width: 340px;
+    margin:2em 0;
+    outline: 4px dashed var(--logo-dgreen);
+    outline-offset: 3px;
+    border-radius: 15px;
+}
+.mitglied-buttons{
+    display: flex;
+}
+
+.mitglied-buttons a , .mitglied-buttons p{
+    color: var(--sec-text-color);
+}
+.mitglied-btn {
+    text-align: center;
+    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+    border: 8px solid var(--primary-bkg-color);
+    max-width: 700px;
+    font-family: "Oswald", sans-serif;
+    padding: 1em 1.5em;
+    border-radius: 15px;
+    background: var(--primary-bkg-color);
+  
+    margin:2em 1em 
+}
+@media (min-width:360px) {
+
+    .mitglied-img{
+        width:350px 
+    }
+}
+@media (min-width: 425px) {
+
+    .mitglied-img{
+        width: 400px
+    }
+}
+
+@media (min-width: 768px) {
+
+    .mitglied-img{
+        width: 700px
+    }
+}

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import logo from "../../assets/img/Logo-web.png";
+import logo from "../../assets/img/logo.png";
 import classes from "./header.module.css";
 import WeatherWidget from "./auxComp/WeatherWidget";
 import * as WiIcons from "react-icons/wi";
 import { BiCaretUp } from "react-icons/bi";
 import sidebarData from "../../data/sideBarData";
+
 
 const Header = () => {
   const [weatherShown, setWeatherShown] = useState(false);
@@ -78,29 +79,41 @@ const Header = () => {
       return !prev;
     });
   };
+   // scroll to the beginning of the page
+
+   const scrollUp =()=>{
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
   /* map the sidebarLinks */
   console.log(sidebarLinks);
   const sideBar = sidebarLinks.map((bar, index) => {
     return (
       <li className={classes["sidebar-elements"]} key={index}>
         <span className={classes["sidebar-icon"]}>{bar.icon}</span>
-        <Link to={bar.ref}>{bar.name} </Link>
+        <Link onClick={scrollUp} to={bar.ref}>{bar.name} </Link>
       </li>
     );
   });
+
+ 
   return (
     <>
       <header className={isScrolledDown ? "" : classes["transparent"]}>
+      
         <img className={classes["header_logo"]} src={logo} alt="logo"></img>
-        <nav>
+        <nav >
           <ul className={classes["header_nav-list"]}>
-            <li>
+            <li > 
               <div className={classes["glitch-wrapper"]}>
                 <div
                   className={`${classes["glitch"]} ${classes.g0}`}
                   data-glitch="Startseite"
                 >
-                  <Link to="/"> Startseite </Link>
+                  <Link onClick={scrollUp} to="/"> Startseite </Link>
                 </div>
               </div>
             </li>
@@ -110,7 +123,7 @@ const Header = () => {
                   className={`${classes["glitch"]} ${classes.g1}`}
                   data-glitch="glitch"
                 >
-                  <Link to="/über"> Über uns </Link>
+                  <Link onClick={scrollUp} to="/über"> Über uns </Link>
                 </div>
               </div>
             </li>
@@ -120,7 +133,7 @@ const Header = () => {
                   className={`${classes["glitch"]} ${classes.g2}`}
                   data-glitch="Spenden "
                 >
-                  <Link to="/spenden"> Spenden </Link>
+                  <Link onClick={scrollUp} to="/spenden"> Spenden </Link>
                 </div>
               </div>
             </li>
@@ -131,7 +144,7 @@ const Header = () => {
                   className={`${classes["glitch"]} ${classes.g3}`}
                   data-glitch="Über uns"
                 >
-                  <Link to="/aktuelles"> Aktuelles </Link>
+                  <Link onClick={scrollUp} to="/aktuelles"> Aktuelles </Link>
                 </div>
               </div>
             </li>
@@ -141,7 +154,7 @@ const Header = () => {
                   className={`${classes["glitch"]} ${classes.g4}`}
                   data-glitch="Über uns"
                 >
-                  <Link to="/kontakt"> Kontakt </Link>
+                  <Link onClick={scrollUp} to="/kontakt"> Kontakt </Link>
                 </div>
               </div>
             </li>
@@ -191,16 +204,16 @@ const Header = () => {
         {menuOpen && (
           <div className={classes["sidebar-container"]}>
             <nav>
-              <ul className={classes["sidebar-list"]}>{sideBar}</ul>
+              <ul onClick={openCloseMenu}  className={classes["sidebar-list"]}>{sideBar}</ul>
             </nav>
           </div>
         )}
       </header>
       {isScrolledDown && (
         <div className={menuOpen ? classes["none"] : classes["arrow-goUp"]}>
-          <a href="/">
-            <BiCaretUp />
-          </a>
+         <div onClick={scrollUp}>  <BiCaretUp /> </div>
+           
+         
         </div>
       )}
     </>

@@ -1,0 +1,339 @@
+.uber-uns-container{
+    padding: 10em 0 0 0;
+}
+.uber-uns-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.uber-uns-intro_text{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.3rem;
+    padding: 1em 2em;
+    clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
+    font-family: "Oswald", sans-serif;
+    border: 8px solid var(--primary-bkg-color);
+    width: 400px;
+}
+.uber-uns-intro_title-2{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.3rem;
+    padding: 1em 2em;
+    clip-path: polygon(0.9% -0.2%, 99.4% 0%, 99% 98%, 1.4% 98.3%);
+    font-family: "Oswald", sans-serif;
+    border: 8px solid var(--primary-bkg-color);
+    width: 400px;
+}
+.uber-uns-intro_image img{
+    width: 95px;
+    border-radius: 50%;
+    position: relative;
+    top: 70px;
+    right: -300px;
+    z-index: 1;
+    transform: rotate(13deg);
+    outline: 4px dashed var(--logo-dgreen);
+    outline-offset: 3px;
+
+}
+.infografik{
+    -webkit-box-shadow: 7.5px 4px 13px -5.5px #000000;
+-moz-box-shadow: 7.5px 4px 13px -5.5px #000000;
+box-shadow: 7.5px 4px 13px -5.5px #000000;
+}
+.vereine{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 2em 0;
+   
+    grid-area: bottom2;
+   
+  }
+  .vereine-title{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background: var(--sec-text-color);
+    padding: 1em 2em;
+    margin: 1em 3em;
+    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+    border: 8px solid var(--primary-bkg-color);
+  
+  }
+  .vereine-list{
+    display: flex;
+    flex-direction:column;
+  
+    background: var(--sec-text-color);
+    padding: 1em 2em;
+    margin: 1em 3em;
+    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+    border: 8px solid var(--primary-bkg-color);
+  }
+
+  .vereine-list a{
+    color: var(--primary-bkg-color);
+    font-family: "Noto Serif", serif;
+  }
+  .vereine-list a:hover{
+    color:var(--logo-dgreen)
+  }
+
+
+  .vorstand{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 500px;
+-webkit-box-shadow: 7.5px 4px 13px -5.5px #000000;
+-moz-box-shadow: 7.5px 4px 13px -5.5px #000000;
+box-shadow: 7.5px 4px 13px -5.5px #000000;
+  }
+  .mitglied{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 2em 0;
+  }
+
+  .mitglied-title{
+    
+    background: var(--sec-text-color);
+    padding: 1em ;
+    margin: 1em 3em;
+    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+    border: 8px solid var(--primary-bkg-color);
+    text-align: center;
+    
+  }
+  .mitglied-text{
+    
+    background: var(--sec-text-color);
+    padding: 1em 2em;
+    margin: 1em 3em;
+    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+    border: 8px solid var(--primary-bkg-color);
+    max-width: 700px;
+    font-family: "Oswald", sans-serif;
+    text-align: justify;
+  }
+ .mitglied-btn{
+  clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+  border: 8px solid var(--primary-bkg-color);
+  max-width: 700px;
+  font-family: "Oswald", sans-serif;
+  padding: 1em 1.5em;
+  border-radius: 15px;
+  background: var(--primary-bkg-color);
+  margin-top: 2em;
+
+ }
+ .mitglied-btn a{
+  color: var(--sec-text-color);
+  letter-spacing:4px;
+ }
+
+ /*aux*/
+ .pulsate-bck {
+	-webkit-animation: pulsate-bck 1s ease-in-out infinite both;
+	        animation: pulsate-bck 1s ease-in-out infinite both;
+}
+/*media queries*/
+
+@media  (max-width: 365px) {
+ .vorstand{
+  
+    width: 330px !important;
+  }
+        .vorstand img{
+   
+    width: 330px !important;
+  }
+
+  .uber-uns-intro_image img{
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
+      top: 52px !important;
+    right: -280px!important;
+    z-index: 1;
+    transform: rotate(13deg);
+    outline: 4px dashed var(--logo-dgreen);
+    outline-offset: 3px;
+
+}
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  /* Styles for iOS devices */
+  /* Remove the outline and outline-offset properties */
+ 
+  .uber-uns-intro_image img{
+
+    outline: none !important;
+    outline-offset: 0 !important;
+
+}
+}
+
+@media  (max-width: 424px) {
+    .uber-uns-intro_image img{
+       
+        right: -270px;
+      
+    
+    }
+    .uber-uns-intro_text,.uber-uns-intro_title-2{
+        width: 350px;
+    }
+    .uber-uns-intro img{
+      display: none;
+     }
+     .infografik{
+        display: block ;
+        width: 340px !important;
+       }
+
+        .vorstand{
+  
+    width: 350px;
+  }
+        .vorstand img{
+   
+    width: 350px;
+  }
+
+}
+
+@media  (min-width: 425px) {
+    .uber-uns-intro_image img{
+        width:95px;
+        border-radius: 50%;
+        position: relative;
+        top: 70px;
+        right: -300px;
+        z-index: 1;
+        transform: rotate(13deg);
+        outline: 4px dashed var(--logo-dgreen);
+        outline-offset: 3px;
+    
+    }
+
+    .uber-uns-intro_text,.uber-uns-intro_title-2{
+        width: 350px;
+    }
+      .vorstand{
+  
+    width: 400px;
+  }
+        .vorstand img{
+   
+    width: 400px;
+  }
+}
+
+
+
+@media  (max-width: 767px) {
+    .uber-uns-intro img{
+        display: none;
+       }
+
+       .infografik{
+        display: block !important;
+        width: 400px ;
+       }
+
+     
+}
+
+@media  (min-width: 768px) {
+
+    .uber-uns-intro{
+        margin: 4em auto 1em auto;;
+        display: grid;
+        grid-template-columns: 250px 400px;
+     
+       grid-template-areas: "topl topr"
+                            "bottom bottom"
+                            "bottom1 bottom1" 
+                            "bottom2 bottom2";
+                       
+                            justify-items: center;
+    }
+    .uber-uns-intro img{
+       width: 200px;
+       margin-bottom: 1em;
+    }
+    .uber-uns-intro_image img{
+       display: none;
+    
+    }
+
+    .uber-uns-intro_title-2{
+
+        grid-area: bottom;
+        width: 600px ;
+    }
+    .infografik{
+      
+        width: 600px !important;
+       grid-area: bottom1;
+       }
+
+            .vorstand{
+  
+    width: 700px;
+  }
+        .vorstand img{
+   
+    width: 700px;
+  }
+}/* ----------------------------------------------
+ * Generated by Animista on 2023-3-10 8:47:31
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation pulsate-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

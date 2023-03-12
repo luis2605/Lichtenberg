@@ -1,24 +1,131 @@
 .footer-container {
   padding: 2em 0;
   width: 100%;
-  height: 200px;
+  height: 450px;
   background-color: var(--logo-dgreen);
   background-image: url("../../assets/img/Sonne-Footer.png");
   background-repeat: no-repeat;
   background-position: initial;
   background-size: contain;
 }
+.adress-info-adress{
+  display: flex;
+}
+
+.adress-info , .adress {
+  margin-right:6em;
+}
 .footer-contact-social {
   display: flex;
-  align-items: center;
+
   justify-content: space-around;
+      align-items: baseline;
+}
+
+.legal-left-year{
+  width: 80px;
+  border-radius: 50%;
+}
+.legal-right{
+  display: flex;
+  color: aliceblue;
+  
+}
+.legal-right h4{
+ margin: 0 1em;
+  color: aliceblue;
+  
 }
 .title {
   color: var(--primary-bkg-color);
 }
 .info-text {
   color: var(--primary-text-color);
+  margin-top: 1em;
 }
 .social-icons {
   width: 60px;
+}
+.social-title{
+      color: var(--primary-bkg-color);
+          font-size: 2rem;
+}
+.footer-legal{
+  display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 2em 0;
+}
+.footer-legal h2{
+   margin-right:4em;
+      color: var(--primary-bkg-color);
+}
+
+/*media queries*/
+
+
+
+@media screen and (max-width: 425px) {
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+  height: auto;
+}
+.footer-contact-social{
+  flex-direction: column;
+  margin: 1em auto;
+}
+.footer-legal{
+ flex-direction: column;
+}
+
+.legal-left{
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  align-items: center;
+}
+.legal-left h2{
+  font-size: 1.3rem;
+  margin: 0 auto;;
+}
+.social {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.social-icons-container{
+  display: flex;
+
+}
+.adress-info , .adress {
+  font-size: .9rem;
+}
+.adress-info-adress {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 768px) {
+.footer-container{
+  height: auto;
+}
+.footer-contact-social{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-legal{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2em 0;
+  flex-direction: column;
+}
 }

@@ -1,0 +1,19 @@
+.collage-container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background: var(--sec-text-color);
+
+    margin: 1em 3em;
+    clip-path: polygon(0% 0.3%, 99.6% 0.8%, 99.5% 100%, 0.7% 100%);
+  }
+.collage-img{
+    width: 100%;
+}
+
+@media screen and (max-width:365px){
+  .collage-container{
+   max-width: 340px;
+  }
+}
