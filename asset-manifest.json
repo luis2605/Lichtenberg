@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Lichtenberg/static/css/main.19d60fb0.css",
-    "main.js": "/Lichtenberg/static/js/main.52cb5f82.js",
+    "main.css": "/Lichtenberg/static/css/main.37d10a12.css",
+    "main.js": "/Lichtenberg/static/js/main.ac7ea806.js",
     "static/js/787.ac2701de.chunk.js": "/Lichtenberg/static/js/787.ac2701de.chunk.js",
     "static/media/marker.gif": "/Lichtenberg/static/media/marker.d3e83e7a77be3deab2c5.gif",
     "static/media/zumMap.gif": "/Lichtenberg/static/media/zumMap.70ea4d8ab84984168b70.gif",
+    "static/media/Projekte-_1_.webp": "/Lichtenberg/static/media/Projekte-_1_.acc719a29292f57a3d67.webp",
     "static/media/year.gif": "/Lichtenberg/static/media/year.e5c9377acbe06671912a.gif",
     "static/media/infografik.png": "/Lichtenberg/static/media/infografik.2f920710255e8f142dbb.png",
     "static/media/vorstand-big.gif": "/Lichtenberg/static/media/vorstand-big.c0f8d8f300a9ec947935.gif",
@@ -13,6 +14,7 @@
     "static/media/einladung.webp": "/Lichtenberg/static/media/einladung.413e5f10f59c66586b4e.webp",
     "static/media/bkg.webp": "/Lichtenberg/static/media/bkg.32bb5540a8716537f8aa.webp",
     "static/media/Lichtenberg vom Kran_10.05.2011_018FotoCBuchen.webp": "/Lichtenberg/static/media/Lichtenberg vom Kran_10.05.2011_018FotoCBuchen.f81c8f8b25dcccd6c13d.webp",
+    "static/media/timeline.webp": "/Lichtenberg/static/media/timeline.e997673e429cae0c0a68.webp",
     "static/media/Lichtenberg Ortsmitte_04.10.2009_004FotoCBuchen.webp": "/Lichtenberg/static/media/Lichtenberg Ortsmitte_04.10.2009_004FotoCBuchen.29b1fc4ac9cb0386e196.webp",
     "static/media/mitglied.gif": "/Lichtenberg/static/media/mitglied.5c81b1646c9f50d85607.gif",
     "static/media/spenden.gif": "/Lichtenberg/static/media/spenden.4e430a8b6c1aeb1b2918.gif",
@@ -34,12 +36,12 @@
     "static/media/Sonne-Footer.png": "/Lichtenberg/static/media/Sonne-Footer.0a4486f4b9c883ac185a.png",
     "static/media/logo.png": "/Lichtenberg/static/media/logo.6aae81f5672bbe35fd63.png",
     "index.html": "/Lichtenberg/index.html",
-    "main.19d60fb0.css.map": "/Lichtenberg/static/css/main.19d60fb0.css.map",
-    "main.52cb5f82.js.map": "/Lichtenberg/static/js/main.52cb5f82.js.map",
+    "main.37d10a12.css.map": "/Lichtenberg/static/css/main.37d10a12.css.map",
+    "main.ac7ea806.js.map": "/Lichtenberg/static/js/main.ac7ea806.js.map",
     "787.ac2701de.chunk.js.map": "/Lichtenberg/static/js/787.ac2701de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19d60fb0.css",
-    "static/js/main.52cb5f82.js"
+    "static/css/main.37d10a12.css",
+    "static/js/main.ac7ea806.js"
   ]
 }
