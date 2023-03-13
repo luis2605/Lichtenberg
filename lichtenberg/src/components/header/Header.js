@@ -105,7 +105,7 @@ const Header = () => {
     <>
       <header className={isScrolledDown ? "" : classes["transparent"]}>
       
-      <Link  className={classes["header_link"]} onClick={scrollUp} to="/"> <img className={classes["header_logo"]} src={logo} alt="logo"></img></Link>
+      <Link  className={classes["header_link"]} onClick={scrollUp} to="/Lichtenberg"> <img className={classes["header_logo"]} src={logo} alt="logo"></img></Link>
         <nav >
           <ul className={classes["header_nav-list"]}>
             <li > 
@@ -114,7 +114,7 @@ const Header = () => {
                   className={`${classes["glitch"]} ${classes.g0}`}
                   data-glitch="Startseite"
                 >
-                  <Link onClick={scrollUp} to="/"> Startseite </Link>
+                  <Link onClick={scrollUp} to="/Lichtenberg"> Startseite </Link>
                 </div>
               </div>
             </li>

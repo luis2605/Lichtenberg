@@ -9,7 +9,7 @@ import mitglied from "../assets/sidebar_gifs/mitglied.gif"
 const sidebarData = [
   {
     name: "Startseite",
-    ref: "/",
+    ref: "/Lichtenberg",
     icon: <BiIcons.BiLayout />,
     imgSource:start
   },
