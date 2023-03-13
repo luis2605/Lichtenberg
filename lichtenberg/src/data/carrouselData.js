@@ -8,27 +8,27 @@ const carrouselData = [
   {
     img: img1,
     text: "St. Joseph - Lichtenberg",
-    sub: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet bibendum dignissim. Integer tellus ipsum, laoreet vel lacus ut, pellentesque varius est. Aenean at erat.",
+    sub: "",
   },
   {
     img: img2,
     text: "Gasthof Lichtenberger Hof",
-    sub: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet bibendum dignissim. Integer tellus ipsum, laoreet vel lacus ut, pellentesque varius est. Aenean at erat.",
+    sub: "",
   },
   {
     img: img3,
-    text: "Lichtenberg von oben",
-    sub: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet bibendum dignissim. Integer tellus ipsum, laoreet vel lacus ut, pellentesque varius est. Aenean at erat.",
+    text: "Lichtenberger Straße",
+    sub: "",
   },
   {
     img: img4,
     text: "Lichtenberg View",
-    sub: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet bibendum dignissim. Integer tellus ipsum, laoreet vel lacus ut, pellentesque varius est. Aenean at erat.",
+    sub: "",
   },
   {
     img: img5,
     text: "Lichtenberg von oben",
-    sub: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet bibendum dignissim. Integer tellus ipsum, laoreet vel lacus ut, pellentesque varius est. Aenean at erat.",
+    sub: "",
   },
 ];
 export default carrouselData;

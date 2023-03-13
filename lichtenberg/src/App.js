@@ -10,6 +10,7 @@ import UberUns from "./components/uberUns/UberUns";
 import Aktuelles from "./components/aktuelles/Aktuelles";
 import Mitglied from "./components/mitglied/Mitglied";
 import Contact from "./components/contact/Contact";
+import Spenden from "./components/header/spenden/Spenden";
 
 function App() {
 
@@ -75,6 +76,7 @@ function App() {
         <Route path="/aktuelles" element={<Aktuelles />}></Route>
         <Route path="/mitglied" element={<Mitglied />}></Route>
         <Route path="/kontakt" element={<Contact />}></Route>
+        <Route path="/spenden" element={<Spenden />}></Route>
       </Routes>
       <Footer></Footer>
     </div>

@@ -13,7 +13,7 @@ const ZuUns = () => {
 
   return (
    <>
-    <h2 className={classes["zuUns-intro"]}>Dein Weg zu uns findest du hier:  </h2>
+    <h2 className={classes["zuUns-intro"]}>Weil wir leicht zu finden sind ...  </h2>
     
    <div onClick={handleShowMap} className={classes["zuUns-container"]}>
  

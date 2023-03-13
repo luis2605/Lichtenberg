@@ -7,6 +7,9 @@ import classes from "./home.module.css";
 import Wieso from "../wieso/Wieso";
 import Collage from "../collage/Collage";
 
+import Projekte from "../projekte/Projekte";
+import Geschichte from "../geschichte/Geschichte";
+
 export const Home = () => {
   return (
     <div className={classes["home-container"]}>
@@ -16,6 +19,8 @@ export const Home = () => {
       <Wieso></Wieso>
       <ZuUns />
       <Collage/>
+      <Projekte/>
+      <Geschichte/>
     </div>
   );
 };

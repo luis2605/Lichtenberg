@@ -13,8 +13,11 @@
  position: absolute;
  right: 60%;
  bottom:5em;
+ background: var(  --sec-text-color);
  clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
  font-family: "Oswald", sans-serif;
+ border: 8px solid var(--primary-bkg-color);
+ box-shadow: 7.5px 4px 13px -5.5px #000000;
 }
 .caption-title{
   color:var( --primary-bkg-color) ;
@@ -25,6 +28,8 @@
 
 @media (max-width: 585px) {
   .caption-container{
-position: initial;
-  }
+
+  
+bottom:5em;
+right: 2em;}
   }
