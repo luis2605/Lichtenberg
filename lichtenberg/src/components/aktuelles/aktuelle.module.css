@@ -7,6 +7,7 @@ background-image: url(../../assets/img//bkg.webp);
 background-repeat: repeat;
 background-size: cover;
 align-items: center;
+overflow: scroll;
 }
 
 .fb-post-container h2{

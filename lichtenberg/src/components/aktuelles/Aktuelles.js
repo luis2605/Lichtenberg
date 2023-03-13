@@ -29,9 +29,9 @@ const Aktuelles = () => {
             useEffect(() => {
               const handleResize = () => {
                 if (window.innerWidth <= '400') {
-                  setMyVariable('300');
+                  setMyVariable('300px');
                 } else {
-                  setMyVariable('400');
+                  setMyVariable('400px');
                 }
               };
               window.addEventListener('resize', handleResize);
