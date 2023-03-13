@@ -3,7 +3,7 @@ header {
   height: 200px;
   display: flex;
   position: fixed;
-  justify-content: space-around;
+
   align-items: center;
   font-family: "Noto Serif", serif;
   z-index: 1003;
@@ -11,6 +11,7 @@ header {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   transition: all 0.7s ease;
+  justify-content: center;
 
 }
 nav {
