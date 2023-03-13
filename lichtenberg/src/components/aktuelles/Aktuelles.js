@@ -15,7 +15,7 @@ const Aktuelles = () => {
         return (
         
             <div className="fb-post" key={index}  data-href={`https://www.facebook.com/facebook/posts/${post.postNumber}`} 
-            data-width="300px"
+            data-width="300"
            
             data-tabs="timeline, events" 
             data-show-text="false" 
@@ -29,9 +29,9 @@ const Aktuelles = () => {
             useEffect(() => {
               const handleResize = () => {
                 if (window.innerWidth <= '400') {
-                  setMyVariable('300px');
+                  setMyVariable('300');
                 } else {
-                  setMyVariable('400px');
+                  setMyVariable('400');
                 }
               };
               window.addEventListener('resize', handleResize);
