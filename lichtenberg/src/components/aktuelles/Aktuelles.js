@@ -15,7 +15,7 @@ const Aktuelles = () => {
         return (
         
             <div className="fb-post" key={index}  data-href={`https://www.facebook.com/facebook/posts/${post.postNumber}`} 
-            data-width={myVariable}
+            data-width="300px"
            
             data-tabs="timeline, events" 
             data-show-text="false" 
