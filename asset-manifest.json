@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Lichtenberg/static/css/main.4a365c62.css",
+    "main.css": "/Lichtenberg/static/css/main.611066cc.css",
     "main.js": "/Lichtenberg/static/js/main.293cd6cf.js",
     "static/js/787.ac2701de.chunk.js": "/Lichtenberg/static/js/787.ac2701de.chunk.js",
     "static/media/marker.gif": "/Lichtenberg/static/media/marker.d3e83e7a77be3deab2c5.gif",
@@ -34,12 +34,12 @@
     "static/media/Sonne-Footer.png": "/Lichtenberg/static/media/Sonne-Footer.0a4486f4b9c883ac185a.png",
     "static/media/logo.png": "/Lichtenberg/static/media/logo.6aae81f5672bbe35fd63.png",
     "index.html": "/Lichtenberg/index.html",
-    "main.4a365c62.css.map": "/Lichtenberg/static/css/main.4a365c62.css.map",
+    "main.611066cc.css.map": "/Lichtenberg/static/css/main.611066cc.css.map",
     "main.293cd6cf.js.map": "/Lichtenberg/static/js/main.293cd6cf.js.map",
     "787.ac2701de.chunk.js.map": "/Lichtenberg/static/js/787.ac2701de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a365c62.css",
+    "static/css/main.611066cc.css",
     "static/js/main.293cd6cf.js"
   ]
 }
