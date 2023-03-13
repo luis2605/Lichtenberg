@@ -5,7 +5,7 @@ import classes from './aktuelle.module.css'
 const Aktuelles = () => {
 
     const [posts, setPosts] = useState(postData);
-    const [myVariable, setMyVariable] = useState("");
+    const [myVariable, setMyVariable] = useState("300");
    
    
 
@@ -15,7 +15,7 @@ const Aktuelles = () => {
         return (
         
             <div className="fb-post" key={index}  data-href={`https://www.facebook.com/facebook/posts/${post.postNumber}`} 
-            data-width="300"
+            data-width={myVariable}
            
             data-tabs="timeline, events" 
             data-show-text="false" 
