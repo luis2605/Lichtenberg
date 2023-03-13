@@ -70,7 +70,7 @@ function App() {
      <Header></Header>
      
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/Lichtenberg" element={<Home />}></Route>
         <Route path="/über" element={<UberUns />}></Route>
         <Route path="/aktuelles" element={<Aktuelles />}></Route>
         <Route path="/mitglied" element={<Mitglied />}></Route>
