@@ -6,11 +6,31 @@ const Aktuelles = () => {
 
     const [posts, setPosts] = useState(postData);
     const [myVariable, setMyVariable] = useState("300");
-   
-   
 
    
-    const postContainer = posts.map((post,index) => {
+    
+    useEffect(() => {
+
+        window.FB.XFBML.parse();
+  
+      const handleResize = () => {
+        if (window.innerWidth <= '400') {
+          setMyVariable('300');
+        } else {
+          setMyVariable('400');
+        }
+     
+      };
+      window.addEventListener('resize', handleResize);
+  
+      return () => window.removeEventListener('resize', handleResize);
+
+   
+   
+    }, []);
+
+    try {
+      const postContainer = posts.map((post,index) => {
     
         return (
         
@@ -23,31 +43,38 @@ const Aktuelles = () => {
             </div>
         )   
             })
-            useEffect(() => {
-              window.FB.XFBML.parse();
-            }, []);
-            useEffect(() => {
-              const handleResize = () => {
-                if (window.innerWidth <= '400') {
-                  setMyVariable('300');
-                } else {
-                  setMyVariable('400');
-                }
-              };
-              window.addEventListener('resize', handleResize);
-              return () => window.removeEventListener('resize', handleResize);
-              
-            }, []);
+  
+  
+      return (
+       
+          <div className={classes["fb-post-container"]} >
+            <h2>Aktuelles</h2>
+            <h4>Hier finden Sie alles rund um <span  className={classes["fb-post-span"]} >Lichtenberg</span> . Anstehende Events, Neuigkeiten und aktuelle Termine<span  className={classes["fb-post-span"]} > :</span> </h4>
+          
+    
+             <div className={classes["post"]}  > {postContainer}</div>
+           
+           
+          </div>
+        
+      );
+    } catch (error) {
+      console.error(error);
+      return (   <div className={classes["spinner"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <p>Laden bitte Neue</p>
+     </div>)   
+     
+    }
+   
+   
+    
             console.log(myVariable);
-    return (
-      <div className={classes["fb-post-container"]} >
-        <h2>Aktuelles</h2>
-        <h4>Hier finden Sie alles rund um <span  className={classes["fb-post-span"]} >Lichtenberg</span> . Anstehende Events, Neuigkeiten und aktuelle Termine<span  className={classes["fb-post-span"]} > :</span> </h4>
-          <div className={classes["post"]}  > {postContainer}</div>
-       
-       
-      </div>
-    );
+   
   }
 
 export default Aktuelles
