@@ -24,7 +24,7 @@ const Mitglied = () => {
         <div className={classes["mitglied-buttons"]}>
         
      
-        <a className={classes["mitglied-btn"]} href="/DGTNVorlageMitgliedsantrag.pdf" download="DGTNVorlageMitgliedsantrag.pdf"> 📄 Download the pdf</a>
+        <a className={classes["mitglied-btn"]} href="../../assets/pdf/DGTNVorlageMitgliedsantrag.pdf" download="DGTNVorlageMitgliedsantrag.pdf"> 📄 Download the pdf</a>
         <p className={classes["mitglied-btn"]}>
   {" "}
   <Link onClick={scrollUp} to="/über"> ◻️ Zurück </Link>
