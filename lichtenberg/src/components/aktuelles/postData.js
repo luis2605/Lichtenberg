@@ -1,10 +1,6 @@
 const postData = [
  
-  {
-       
-    postNumber: "651570376959544",
-    
-  },
+
   {
        
     postNumber: "522862950032709",
