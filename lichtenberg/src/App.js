@@ -11,6 +11,8 @@ import Aktuelles from "./components/aktuelles/Aktuelles";
 import Mitglied from "./components/mitglied/Mitglied";
 import Contact from "./components/contact/Contact";
 import Spenden from "./components/header/spenden/Spenden";
+import Impressum from "./components/impressum/Impressum";
+import Datenschutz from "./components/datenschutz/Datenschutz";
 
 function App() {
 
@@ -77,6 +79,8 @@ function App() {
         <Route path="/mitglied" element={<Mitglied />}></Route>
         <Route path="/kontakt" element={<Contact />}></Route>
         <Route path="/spenden" element={<Spenden />}></Route>
+        <Route path="/impressum" element={<Impressum />}></Route>
+        <Route path="/datenschutz" element={<Datenschutz />}></Route>
       </Routes>
       <Footer></Footer>
     </div>

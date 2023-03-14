@@ -5,97 +5,53 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 3em ;
+    background-color:rgba(255, 255, 255,1);
+    border-radius: 15px;
+    padding: 2em  1em;
     z-index: 1000;
-    display: block;
+   
     display: flex;
     flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
     margin: 1em auto;
 }
 
 .modalStyles-title{
     display: flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+    align-items: center;
 }
 .modalStyles-text{
-    font-size: 2rem;
-    font-family: "Noto Serif", serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin:  1em 2em;
+
     color:var(--primary-bkg-color)
 }
 .modalStyles-img{
    width: 100px;
-   margin-left: 2em;
+   height: auto;
+   margin-left: .5em;
 }
-/*radio buttons*/
-.form-control {
-    font-family: system-ui, sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.1;
-   display: flex;
-   flex-direction: row;
-   margin :1em 2em
-  }
-  .form-control p {
-    font-size: 1rem;
-    margin:   .5em;
-    align-self: center;
-    color: var(--primary-bkg-color);
-    text-align: justify;
-  }
-
-  input[type="radio"] {
-    appearance: none;
-    background-color: #fff;
-    margin: 0 1em;
-    font: inherit;
-    color: currentColor;
-    width: 1.15em;
-    height: 1.15em;
-    border: 0.15em solid currentColor;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
-    display: grid;
-    place-content: center;
-  }
-  
-  .form-control + .form-control {
-    margin-top: 1em;
-  }
-  input[type="radio"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-  }
-  
-  input[type="radio"]:checked::before {
-    transform: scale(1);
-  }
-  input[type="radio"]:focus, input[type="radio"]:hover  {
-    outline: max(2px, 0.15em) solid currentColor;
-    outline-offset: max(2px, 0.15em);
-  }
 
   .form-btn{
     color: #fff;
     background-color: var(--primary-bkg-color);
-    margin: 2em auto;;
+    margin: 0 auto;;
     padding:1em 1.5em;
     border-radius: 0.5em;
     border: none;
-    font-family: "Oswald", sans-serif;
+
     font-size :1.3rem;
   }
 /*aux*/
 
 .text-bl{
     color: black;
-    font-family: "Oswald", sans-serif;
+  
 }
 
 /*media queries*/
@@ -110,7 +66,7 @@
     }
     .modalStyles-text{
         font-size: 1rem;
-        font-family: "Noto Serif", serif;
+    
         color:var(--primary-bkg-color)
     }
     .modalStyles-img{
@@ -119,7 +75,7 @@
     }
 
     .form-control {
-        font-family: system-ui, sans-serif;
+      
         font-size:.9rem;
         font-weight: bold;
         line-height: 1.1;
@@ -148,7 +104,7 @@
         font-size: 1rem;
         text-align: center;
         letter-spacing: 2px;
-        font-family: "Noto Serif", serif;
+      
         color:var(--primary-bkg-color)
     }
     .modalStyles-img{
@@ -158,7 +114,7 @@
     }
 
     .form-control {
-        font-family: system-ui, sans-serif;
+    
         font-size:.9rem;
         font-weight: bold;
         line-height: 1.1;
@@ -178,11 +134,11 @@
       .form-btn{
         color: #fff;
         background-color: var(--primary-bkg-color);
-        margin: 2em auto;;
+        margin: 0 auto;;
         padding:1em 1.5em;
         border-radius: 0.5em;
         border: none;
-        font-family: "Oswald", sans-serif;
+     
         font-size :1rem;
       }
 }
@@ -191,16 +147,20 @@
     .modalStyles{
         width: 350px;
         align-items: center;
+        justify-content: center;
        
     }
     .modalStyles-title{
         display: flex;
+        align-items: center;
+        justify-content: center;
+       
     }
     .modalStyles-text{
         font-size: 1rem;
         text-align: center;
         letter-spacing: 2px;
-        font-family: "Noto Serif", serif;
+     margin: 1em 3em;
         color:var(--primary-bkg-color)
     }
     .modalStyles-img{
@@ -210,7 +170,7 @@
     }
 
     .form-control {
-        font-family: system-ui, sans-serif;
+     
         font-size:.9rem;
         font-weight: bold;
         line-height: 1.1;
@@ -226,11 +186,11 @@
       .form-btn{
         color: #fff;
         background-color: var(--primary-bkg-color);
-        margin: 2em auto;;
+        margin: 0 auto;;
         padding:1em 1.5em;
         border-radius: 0.5em;
         border: none;
-        font-family: "Oswald", sans-serif;
+  
         font-size :1rem;
       }
 }

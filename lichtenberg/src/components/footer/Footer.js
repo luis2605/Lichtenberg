@@ -74,7 +74,7 @@ export const Footer = () => {
 </div>
 <div className={classes["legal-right"]}>
 <Link to="/impressum"> <h4>Impressum</h4> </Link>
-<Link to="/impressum"> <h4>Datenschutz</h4> </Link>
+<Link to="/datenschutz"> <h4>Datenschutz</h4> </Link>
 </div>
 
       </div>

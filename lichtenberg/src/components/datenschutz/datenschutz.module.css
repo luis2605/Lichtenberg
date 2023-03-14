@@ -1,0 +1,52 @@
+
+.daten-container{
+    display: flex;
+    margin: 0 auto;
+}
+
+.daten {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 15em 3em  15em 3em ;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background: var(  --sec-text-color);
+    clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 98.3%);
+    font-family: "Oswald", sans-serif;
+    border: 8px solid var(--primary-bkg-color);
+    
+  }
+  
+  .daten h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .daten p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width:425px){
+
+
+    .daten {
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 15em 2em 1em 2em;
+        margin: 0 auto;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        background: var(  --sec-text-color);
+        clip-path: none;
+        font-family: "Oswald", sans-serif;
+        border: 3px solid var(--primary-bkg-color);
+        
+      }
+      .daten a {
+        font-size: 10px;
+      }
+  }
