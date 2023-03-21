@@ -2,9 +2,36 @@ import React, { useState, useEffect } from "react";
 import classes from "./weatherWidget.module.css";
 import * as WiIcons from "react-icons/wi";
 
-const WeatherWidget = ({ onWeatherData, onIsLoading, onError, onErrorHap }) => {
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+const WeatherWidget = ({ onWeatherData, onIsLoading, onError, onErrorHap, onHeaderSmall }) => {
+  console.log(onHeaderSmall)
+
+ 
+  
+ 
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      console.log(windowDimensions)
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, [windowDimensions]);
+  
+
+  
+
   return (
-    <div className={classes["weather_container"]}>
+    <div className={onHeaderSmall && windowDimensions.width<720 ? classes["weather-container-small"] : classes["weather_container"]}>
       <h1 className={classes["weather-title"]}>
         Das Wetter heute in{" "}
         <span className={classes["contrast-color"]}>Lichtenberg</span> :
@@ -27,7 +54,7 @@ const WeatherWidget = ({ onWeatherData, onIsLoading, onError, onErrorHap }) => {
         </div>
       )}
       {!onErrorHap && (
-        <div className={classes["weather-elements-container"]}>
+        <div className={classes["weather-container"]}>
           <div className={classes["weather-elements"]}>
             <span className={classes["contrast-color"]}>
               <WiIcons.WiThermometer />

@@ -6,21 +6,40 @@
   
 
     margin: 1em 3em;
-    clip-path: polygon(0% 0.3%, 99.6% 0.8%, 99.5% 100%, 0.7% 100%);
+    
   }
 
 .projekte-title{
     color: var(--primary-bkg-color);
-
+text-align: center;
     margin: 2em auto;
     padding: 1em;
     background: var(  --sec-text-color);
-    clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
+   
     font-family: "Oswald", sans-serif;
-    border: 8px solid var(--primary-bkg-color);
+    
 }
 .projekte-img{
     width: 100%;
     box-shadow: 7.5px 4px 13px -5.5px #000000;
 }
 
+@media screen and (max-width: 425px){
+
+    .projekte-container {
+    
+      
+    
+        margin: 0;
+        
+      }
+    
+    .projekte-title {
+        margin: 0 auto 1em auto;
+        box-shadow: none;
+    }
+    .projekte-img{
+        max-width: 360px;
+      margin: .5em ;
+    }
+}

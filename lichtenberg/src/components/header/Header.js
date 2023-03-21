@@ -18,7 +18,11 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const [sidebarLinks, setSidebarLinks] = useState(sidebarData);
+  //display arrow button when scrolling down
   const [isScrolledDown, setIsScrolledDown] = useState(false);
+// reduce size of header when scrolling down
+
+const [headerSmall ,setHeaderSmall] = useState(false);
 
   /*fetch weather data and load the response before the weather widget mounted */
   useEffect(() => {
@@ -44,7 +48,7 @@ const Header = () => {
         setErrorHap(true);
       }
 
-      console.log(error);
+    
       setErrorHap(false);
     }
     fetchWeatherData();
@@ -53,10 +57,10 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = (event) => {
-      console.log("window.scrollY", window.scrollY);
+     
       if (window.scrollY > 50) {
         setIsScrolledDown((prevScrolled) => true);
-        console.log(isScrolledDown);
+     
       } else setIsScrolledDown((prevScrolled) => false);
     };
 
@@ -66,7 +70,29 @@ const Header = () => {
     };
   }, [isScrolledDown]);
 
-  console.log(weatherData);
+   /* show header small when scroll down */
+
+   useEffect(() => {
+    const handleScroll = (event) => {
+    
+      if (window.scrollY > 20) {
+        setHeaderSmall((prev)=>{
+  return (prev =true)
+        })
+     
+      } else setHeaderSmall((prev)=>{
+        return (prev =false)
+              });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+    
+  }, [headerSmall]);
+
+  
 
   const showWeather = () => {
     setWeatherShown((prev) => {
@@ -103,9 +129,9 @@ const Header = () => {
  
   return (
     <>
-      <header className={isScrolledDown ? "" : classes["transparent"]}>
+      <header className={isScrolledDown ? "" : classes["transparent"] }>
       
-      <Link  className={classes["header_link"]} onClick={scrollUp} to="/Lichtenberg"> <img className={classes["header_logo"]} src={logo} alt="logo"></img></Link>
+      <Link  className={classes["header_link"]} onClick={scrollUp} to="/Lichtenberg"> <img className={headerSmall? classes["header-small"] : classes["header_logo"]   } src={logo} alt="logo"></img></Link>
         <nav >
           <ul className={classes["header_nav-list"]}>
             <li > 
@@ -177,6 +203,7 @@ const Header = () => {
             onIsLoading={isLoading}
             onError={error}
             onErrorHap={errorHapp}
+            onHeaderSmall={headerSmall}
           />
         )}
         <div onClick={openCloseMenu} className={classes["hamburger-lines"]}>

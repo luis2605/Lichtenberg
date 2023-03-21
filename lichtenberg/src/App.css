@@ -16,18 +16,18 @@ li {
 }
 
 :root {
-  --primary-text-color: #ffffff;
+  --primary-text-color: #f8f8f8ef;
   --sec-text-color: #e5e5e5;
   --primary-bkg-color: #fca311;
   --sec-bkg-color: #14213d;
   --ter-bkg-color: #000000;
   --arrow: #23310c;
   --logo-lgreen: #93a73b;
-  --logo-dgreen: #38462d;
+  --logo-dgreen: #536d4a;
   --form-control-color: #f3a62a;
 }
 .mega-container {
-  background-color: #fca21193;
+  background-color: var(--form-control-color);
 }
 .overlay {
   position: fixed;
@@ -37,4 +37,11 @@ li {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1005;
+}
+
+@media (max-width: 585px) {
+  .mega-container {
+    background-color:#536d4a8a; ;
+  }
+
 }

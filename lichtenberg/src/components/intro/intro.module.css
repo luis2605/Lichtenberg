@@ -5,8 +5,9 @@
   justify-content: center;
   background: var(--sec-text-color);
   padding: 1em 2em;
-  clip-path: polygon(1.8% -1%, 96.7% -3%, 97.1% 103%, 2.1% 96.5%);
-  border: 8px solid var(--primary-bkg-color);
+  margin:1em 3em ;
+ 
+  box-shadow: 7.5px 4px 13px -5.5px #000000;
 }
 .left {
   display: flex;

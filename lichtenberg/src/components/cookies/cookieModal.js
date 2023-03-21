@@ -13,7 +13,7 @@ function CookieModal(props) {
     <div className={classes.modalStyles}>
         <div className={classes["modalStyles-title"]}>
         <p className={classes["modalStyles-text"]}>Diese Website benutzt<span className={classes["text-bl"]}>  Cookies</span>. Wenn Du die Website weiter nutzt, gehen wir von deinem Einverständnis aus.</p>
-        <img className={classes["modalStyles-img"]}src={cookie} alt={"cookie pic"}></img>
+        {/* <img className={classes["modalStyles-img"]}src={cookie} alt={"cookie pic"}></img> */}
         </div>
         
      

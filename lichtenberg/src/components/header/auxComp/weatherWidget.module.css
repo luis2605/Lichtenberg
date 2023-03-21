@@ -32,6 +32,19 @@
   color: var(--primary-text-color);
   font-size: 1.2rem;
 }
+.weather-container-small{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 135px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 0.65rem;
+  clip-path: polygon(0% 0%, 95% 0%, 55% 100%, 0% 100%);
+  background: var(--primary-bkg-color);
+  padding: .5em 2em;
+}
 /*media queries*/
 @media (max-width: 585px) {
   .weather_container {
@@ -53,7 +66,7 @@
     display: none;
   }
   .weather-title {
-    font-size: 0.7rem;
+    /* font-size: 0.7rem; */
     text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
   }
   .weather-elements-container {

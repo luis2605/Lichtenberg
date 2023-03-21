@@ -1,15 +1,4 @@
-/* .zuUns-container {
-  display: grid;
-  grid-template-areas: "left center right";
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 3em 1em;
-  margin: 0 1em;
-  justify-content: center;
-  align-items: center;
-  background: var(--primary-bkg-color);
-  clip-path: polygon(1.8% 2%, 98.7% -4%, 99.1% 97%, 2.1% 102.5%);
-    border: 8px solid var(--sec-text-color);
-} */
+
 .zuUns-container {
   display:flex;
   padding: 3em 1em;
@@ -17,9 +6,9 @@
   max-width: 700px;
   justify-content: center;
   align-items: center;
-  background: var(--primary-bkg-color);
-  clip-path: polygon(1.8% 2%, 98.7% -4%, 99.1% 97%, 2.1% 102.5%);
-    border: 8px solid var(--sec-text-color);
+  background: var(--logo-dgreen);
+  box-shadow: 7.5px 4px 13px -5.5px #000000;
+   
 }
 .zuUns-container-right {
   display: flex;
@@ -67,11 +56,11 @@
   font-family: "Oswald", sans-serif;
   background: var(--sec-text-color);
   padding: 1em ;
-  max-width: 400px;
+  max-width: 425px;
   text-align: center;
-  margin: 2em auto 0.5em auto;
-  clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
-  border: 8px solid var(--primary-bkg-color);
+  margin: 2em auto 1.5em auto;
+  box-shadow: 7.5px 4px 13px -5.5px #000000;
+ 
 }
 /*aux*/
 .highlighted {
@@ -100,6 +89,11 @@
   margin: 0 1em;
   
  
+  }
+  .zuUns-intro{
+    
+    box-shadow: none;
+   
   }
 }
 

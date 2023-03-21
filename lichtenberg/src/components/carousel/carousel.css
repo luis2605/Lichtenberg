@@ -1,9 +1,10 @@
 .carousel-item img {
   height: 100vh;
-  object-fit: fill;
-  border-bottom: 5px solid var(--sec-bkg-color);
-  clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
+  object-fit:cover;
+
   z-index: -100;
+  box-shadow: 7.5px 4px 13px -5.5px #000000;
+
 }
 .caption-container{
  background-color:whitesmoke;
@@ -14,14 +15,26 @@
  right: 60%;
  bottom:5em;
  background: var(  --sec-text-color);
- clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
+
  font-family: "Oswald", sans-serif;
- border: 8px solid var(--primary-bkg-color);
+
  box-shadow: 7.5px 4px 13px -5.5px #000000;
+
+ padding: 0.3em 0.5em;
+ font-size: 1.2rem;
+ font-weight: 700;
+ line-height: 1.2;
+ color: #ffffff;
+ background: var(--logo-dgreen);
+ letter-spacing: 5px;
+
+ border-radius: 5px;
+
 }
 .caption-title{
-  color:var( --primary-bkg-color) ;
+ 
   font-size: 1.5rem;
+padding: 0.5em 0 0 0;
 }
 
 /*media queries*/
@@ -29,7 +42,20 @@
 @media (max-width: 585px) {
   .caption-container{
 
-  
+  width: 100%;
 bottom:5em;
-right: 2em;}
+
+left: 0em;
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit:cover;
+  object-position: 30%;
+ padding: 0 .5em;
+ 
+  z-index: -100;
+  box-shadow: 7.5px 4px 13px -5.5px #000000;
+
+}
   }

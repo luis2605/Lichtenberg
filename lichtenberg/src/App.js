@@ -37,7 +37,7 @@ function App() {
 
   const handleCloseModal = () => {
     setShowModal(false);
-    
+    document.body.style.overflow = "scroll";
   };
 
   useEffect(() => {
@@ -47,6 +47,7 @@ function App() {
       
       setShowModal(true);
       console.log(cookieValue)
+      document.body.style.overflow = "hidden"
     }
   }, []);
   return (
