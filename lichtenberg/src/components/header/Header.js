@@ -115,7 +115,7 @@ const [headerSmall ,setHeaderSmall] = useState(false);
     });
   }
   /* map the sidebarLinks */
-  console.log(sidebarLinks);
+ 
   const sideBar = sidebarLinks.map((bar, index) => {
     return (
       <li className={classes["sidebar-elements"]} key={index}>

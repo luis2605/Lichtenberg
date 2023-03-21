@@ -4,9 +4,9 @@
     width: 100%;
     bottom: 0vw;
     right: 0vw;
-    /* transform: translate(-50%, -50%); */
+
     background-color: var(--logo-dgreen);
-    /* border-radius: 15px; */
+    
     opacity: .9;
     padding: 1em 1em;
     z-index: 1000;

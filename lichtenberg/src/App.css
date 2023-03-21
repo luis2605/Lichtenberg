@@ -28,6 +28,7 @@ li {
 }
 .mega-container {
   background-color: var(--form-control-color);
+  width: 100%;
 }
 .overlay {
   position: fixed;
