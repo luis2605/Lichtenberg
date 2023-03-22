@@ -33,7 +33,7 @@ const WeatherWidget = ({ onWeatherData, onIsLoading, onError, onErrorHap, onHead
   return (
     <div className={onHeaderSmall && windowDimensions.width<720 ? classes["weather-container-small"] : classes["weather_container"]}>
       <h1 className={classes["weather-title"]}>
-        Das Wetter heute in{" "}
+        Das Wetter in{" "}
         <span className={classes["contrast-color"]}>Lichtenberg</span> :
       </h1>
       {/* loading spinner  */}

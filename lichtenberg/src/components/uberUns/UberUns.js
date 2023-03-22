@@ -4,6 +4,7 @@ import lichtenbergOther from '../../assets/img/Lichtenbergother.png'
 import infografik from '../../assets/img/infografik.png'
 import vorstandBig from '../../assets/img/vorstand-big.gif'
 import { Route, Routes, Link } from "react-router-dom";
+import Vorstand from '../vorstand/Vorstand'
 const uberUns = () => {
    // scroll to the beginning of the page
 
@@ -59,9 +60,9 @@ const uberUns = () => {
 
 
       </div>
-      <div className={classes["vorstand"]}>
-       <img className={classes["vorstand-big"]} src={vorstandBig} alt="vorstand"/>
-      </div>
+
+      <Vorstand/>
+    
 
       <div className={classes["mitglied"]}>
   <h2 className={classes["mitglied-title"]}>Mitglied werden:  </h2>

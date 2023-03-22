@@ -25,10 +25,12 @@ li {
   --logo-lgreen: #93a73b;
   --logo-dgreen: #536d4a;
   --form-control-color: #f3a62a;
+  --mega-container-big:#c2c17f80;
+  --mega-container-small: #536d4a8a;
 }
 .mega-container {
-  background-color: var(--form-control-color);
-  width: 100%;
+  background-color: var(--mega-container-big);
+
 }
 .overlay {
   position: fixed;

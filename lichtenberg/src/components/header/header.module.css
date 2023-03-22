@@ -151,10 +151,13 @@ width: 70px;
   z-index: 1003;
   position: fixed;
   bottom: 2em;
-  right: 1em;
+  right: .7em;
   display: flex;
   padding: 0.5em;
   border-radius: 61% 39% 47% 53% / 42% 37% 63% 58%;
+  outline: 1px solid var(--primary-bkg-color);
+  outline-offset: 1px;
+  box-shadow: 7.5px 4px 13px -5.5px #000000;
 }
 .arrow-goUp div {
   color: #f8f9fa;
@@ -200,6 +203,11 @@ width: 70px;
     width: 100px;
     height: 100px;
     padding: 1em;
+  }
+  .arrow-goUp {
+   
+    right:.1em;
+  
   }
 }
 @media (min-width: 585px) {

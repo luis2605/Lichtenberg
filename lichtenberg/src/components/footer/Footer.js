@@ -17,12 +17,12 @@ export const Footer = () => {
           <div className={classes["adress-info-adress"]}>
           <div className={classes["adress-info"]}>
           <p className={classes["info-text"]}>Dorfgemeinschaft Lichtenberg </p>
-          <p className={classes["info-text"]}>Bergstraße 9</p>
+          <p className={classes["info-text"]}>zu den Garten 39a</p>
           <p className={classes["info-text"]}>51597 Morsbach</p>
           </div>
 
           <div className={classes["adress"]}>
-          <p className={classes["info-text"]}>Telefon: +49 2294 999 1075</p>
+          <p className={classes["info-text"]}>Telefon: +01701796321</p>
           <p className={classes["info-text"]}>E-Mail: dg-lichtenberg@gmx.de</p>
         </div>
         </div>
