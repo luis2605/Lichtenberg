@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Lichtenberg/static/css/main.7974611c.css",
-    "main.js": "/Lichtenberg/static/js/main.343310cc.js",
+    "main.css": "/Lichtenberg/static/css/main.351ec3ba.css",
+    "main.js": "/Lichtenberg/static/js/main.6ef41847.js",
     "static/js/787.ac2701de.chunk.js": "/Lichtenberg/static/js/787.ac2701de.chunk.js",
     "static/media/marker.gif": "/Lichtenberg/static/media/marker.d3e83e7a77be3deab2c5.gif",
     "static/media/zumMap.gif": "/Lichtenberg/static/media/zumMap.70ea4d8ab84984168b70.gif",
@@ -36,12 +36,13 @@
     "static/media/Sonne-Footer.png": "/Lichtenberg/static/media/Sonne-Footer.0a4486f4b9c883ac185a.png",
     "static/media/logo.png": "/Lichtenberg/static/media/logo.6aae81f5672bbe35fd63.png",
     "index.html": "/Lichtenberg/index.html",
-    "main.7974611c.css.map": "/Lichtenberg/static/css/main.7974611c.css.map",
-    "main.343310cc.js.map": "/Lichtenberg/static/js/main.343310cc.js.map",
+    "static/media/blob.svg": "/Lichtenberg/static/media/blob.182f76a935d1ed7b1a4f8ed54efc7332.svg",
+    "main.351ec3ba.css.map": "/Lichtenberg/static/css/main.351ec3ba.css.map",
+    "main.6ef41847.js.map": "/Lichtenberg/static/js/main.6ef41847.js.map",
     "787.ac2701de.chunk.js.map": "/Lichtenberg/static/js/787.ac2701de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7974611c.css",
-    "static/js/main.343310cc.js"
+    "static/css/main.351ec3ba.css",
+    "static/js/main.6ef41847.js"
   ]
 }
