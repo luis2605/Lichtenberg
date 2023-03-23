@@ -19,7 +19,7 @@ const Spenden = () => {
         <p>Sie erhalten die Gewissheit, dass 100% Ihrer Spende für die Projekte des Heimatvereins Lichtenberg eingesetzt werden.</p>
         
         </div>    
-    <div className={classes["spenden-paypal"]}>
+    {/* <div className={classes["spenden-paypal"]}>
     <h2 className={classes["spenden-paypal-title"]}>Paypal-Konto
     </h2>
     
@@ -28,7 +28,7 @@ Die Spendentransaktion findet ausschließlich über PayPal statt. Weitere Inform
 <a href="https://www.paypal.com/de/webapps/mpp/ua/privacy-full?locale.x=de_DE">Datenschutzerklärung - Paypal</a>
     <p>Wir nehmen den Schutz Ihrer personenbezogenen Daten sehr ernst und behandeln diese vertraulich und gemäß der gesetzlichen Datenschutzvorschriften.</p>
   
-    </div>    
+    </div>     */}
         
     </div>
   )

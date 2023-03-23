@@ -296,5 +296,8 @@ width: 70px;
 
 
 .glitch a:hover{
-  color: var(--primary-bkg-color);
+  color: var( --form-control-color);
+}
+.weather-btn :hover{
+  color: var(--form-control-color);
 }
