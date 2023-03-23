@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logot.webp";
 import classes from "./header.module.css";
 import WeatherWidget from "./auxComp/WeatherWidget";
 import * as WiIcons from "react-icons/wi";

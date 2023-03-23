@@ -32,7 +32,7 @@ const EmailForm = () => {
     <form className={styles.formContainer} onSubmit={handleSubmit}>
       <label className={styles.formLabel}>
         Von:
-        <input className={styles.formInput} type="email" value={toEmail} onChange={(e) => setToEmail(e.target.value)} required />
+        <input className={styles.formInput} type="email" value={toEmail} onChange={(e) => setToEmail(e.target.value)} placeholder="Bitte eine E-Mail Adresse eintragen..." required />
       </label>
       <label className={styles.formLabel}>
         Bettreff:

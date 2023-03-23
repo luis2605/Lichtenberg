@@ -12,9 +12,8 @@
     color: black;
     font-size: 1.3rem;
     padding: 1em 2em;
-    clip-path: polygon(0.9% 1.8%, 98.4% 0%, 98% 98%, 1.4% 94.3%);
     font-family: "Oswald", sans-serif;
-    border: 8px solid var(--primary-bkg-color);
+    border: 8px solid var(--logo-dgreen);
     max-width: 400px;
 }
 .mitglied-img{
@@ -33,7 +32,7 @@
 }
 .mitglied-btn {
     text-align: center;
-    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+ 
     border: 8px solid var(--primary-bkg-color);
     max-width: 700px;
     font-family: "Oswald", sans-serif;

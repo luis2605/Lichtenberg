@@ -10,10 +10,11 @@ const Vorstand = () => {
    console.log(vorstandListe)
 
    const vorstandContainer = vorstandListe.map((vorst,index)=>{
+    
 return(
-  <>
+ 
 
-   <div key={index} className={classes["vorstand-element"]} >
+   <div  key={index}   className={classes["vorstand-element"]} >
     <div className={classes["vorstand-img-container"] } >
     <img src={blob} alt={vorst.name} className={classes["vorstand-blob"] } />
     <img src={vorst.img} alt={vorst.name} className={classes["vorstand-img"] } />
@@ -25,7 +26,7 @@ return(
     <h4>{vorst.email}</h4>
    </div>
   
-  </>
+ 
 
 )
 

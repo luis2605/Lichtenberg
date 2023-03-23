@@ -5,7 +5,7 @@ import socialInsta from "../../assets/social_gifs/142110100_ORGANIC_IG_ICON_400.
 import socialYoutube from "../../assets/social_gifs/CLIPLY_142110380_ORGANIC_YT_ICON_400.gif";
 import socialTiktok from "../../assets/social_gifs/CLIPLY_142110290_ORGANIC_TIKTOK_ICON_400.gif";
 import { Route, Routes, Link } from "react-router-dom";
-import year from "../../assets/img/year.gif";
+import year from "../../assets/img/year.png";
 
 export const Footer = () => {
   return (

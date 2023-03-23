@@ -9,8 +9,9 @@ const Spenden = () => {
         <p>Spenden Sie einfach über Ihr Konto an uns:</p>
 
         <div className={classes["spenden-iban-konto"]}>
-        <p>IBAN: DE 0000 0000 0000 0000 0000</p>
-        <p>Institut: XXXXXX XXXX XXX</p>
+        <p>IBAN: DE 08 3846 2135 1601 0630 14</p>
+        <p>BIC: GENODED1WIL</p>
+        <p>Institut: Volksbank Oberberg</p>
         <p>Verwendungszweck: Spende "Lichtenberg"</p>
         </div>
         <p>Mit Ihrer Spende unterstützen Sie gezielt die Darstellung der Historie unseres Dorfes! Sie erhalten Informationen über alle Aktivitäten des Vereins und seiner Mitglieder.</p>

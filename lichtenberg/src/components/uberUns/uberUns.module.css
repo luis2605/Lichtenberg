@@ -1,5 +1,5 @@
 .uber-uns-container{
-    padding: 10em 1em 1em 1em;
+    padding: 15em 1em 1em 1em;
     display: flex;
     flex-direction: column;
 }
@@ -117,8 +117,8 @@ box-shadow: 7.5px 4px 13px -5.5px #000000;
     background: var(--sec-text-color);
     padding: 1em ;
     margin: 1em 3em;
-    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
-    border: 8px solid var(--primary-bkg-color);
+   
+    border: 8px solid var(--logo-dgreen);
     text-align: center;
     
   }
@@ -127,14 +127,14 @@ box-shadow: 7.5px 4px 13px -5.5px #000000;
     background: var(--sec-text-color);
     padding: 1em 2em;
     margin: 1em 3em;
-    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
-    border: 8px solid var(--primary-bkg-color);
+    
+    border: 8px solid var(--logo-dgreen);
     max-width: 700px;
     font-family: "Oswald", sans-serif;
     text-align: justify;
   }
  .mitglied-btn{
-  clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+
   border: 8px solid var(--primary-bkg-color);
   max-width: 700px;
   font-family: "Oswald", sans-serif;

@@ -10,7 +10,7 @@ import UberUns from "./components/uberUns/UberUns";
 import Aktuelles from "./components/aktuelles/Aktuelles";
 import Mitglied from "./components/mitglied/Mitglied";
 import Contact from "./components/contact/Contact";
-import Spenden from "./components/header/spenden/Spenden";
+import Spenden from "./components/spenden/Spenden";
 import Impressum from "./components/impressum/Impressum";
 import Datenschutz from "./components/datenschutz/Datenschutz";
 

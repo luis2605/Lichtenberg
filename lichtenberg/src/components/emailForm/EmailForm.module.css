@@ -4,7 +4,7 @@
     align-items: center;
     padding: 1rem;
     background: var(--sec-text-color);
-    clip-path: polygon(1% -6.7%, 98.6% 1.8%, 99.5% 98%, 0.7% 102%);
+   
     border: 8px solid var(--primary-bkg-color);
     width: 360px !important;
     width: 100%;
@@ -57,3 +57,13 @@
   .formButton:hover {
     background-color: #045;
   }
+  @media(max-width: 425px) {
+
+    .formContainer {
+
+     
+      border: 5px solid var(--primary-bkg-color);
+      width: 330px !important;
+
+    }
+      }
