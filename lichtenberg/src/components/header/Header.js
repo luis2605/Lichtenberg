@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import logo from "../../assets/img/Logo-Lichtenberg_white.png";
+
 import classes from "./header.module.css";
 import WeatherWidget from "./auxComp/WeatherWidget";
 import * as WiIcons from "react-icons/wi";

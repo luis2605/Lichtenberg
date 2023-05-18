@@ -16,24 +16,13 @@ import Datenschutz from "./components/datenschutz/Datenschutz";
 
 function App() {
 
-  /*adding cookies */
+  /*checking for cookies  */
 
-  const [cookieValue, setCookieValue] = useState('');
-  const [showModal, setShowModal] = useState(true);
+ 
+  const [showModal, setShowModal] = useState(false);
 
-  const handleSetCookie = () => {
-    Cookies.set('cookieName', 'cookieValue', { expires: 7 });
-  };
 
-  const handleGetCookie = () => {
-    const value = Cookies.get('cookieName');
-    console.log(value)
-    
-  };
-
-  const handleRemoveCookie = () => {
-    Cookies.remove('cookieName');
-  };
+  
 
   const handleCloseModal = () => {
     setShowModal(false);
@@ -41,15 +30,23 @@ function App() {
   };
 
   useEffect(() => {
-    const value = Cookies.get('cookieName');
-    setCookieValue(value);
-    if (!value) {
-      
-      setShowModal(true);
-      console.log(cookieValue)
+    const cookies = document.cookie.split(';');
+    const hasCookies = cookies.some((cookie) => cookie.trim().startsWith('mywebsite='));
+    setShowModal(!hasCookies);
+     console.log(cookies)
       document.body.style.overflow = "hidden"
     }
-  }, []);
+  , []);
+
+    // scroll to the beginning of the page
+
+    const scrollUp =()=>{
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
   return (
 
 
@@ -69,6 +66,8 @@ function App() {
           <CookieModal handleClose={handleCloseModal} />
         </div>
       )}
+
+
    
     
      <Header></Header>
