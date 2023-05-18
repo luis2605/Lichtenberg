@@ -1,5 +1,5 @@
 import React from 'react'
-import projekte from "../../assets/img/Projekte-_1_.webp"
+import projekte from "../../assets/img/Projekte.webp"
 import classes from  "./projekte.module.css"
 
 const Projekte = () => {

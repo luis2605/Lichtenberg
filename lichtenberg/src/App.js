@@ -25,16 +25,13 @@ function App() {
   
 
   const handleCloseModal = () => {
+    Cookies.set('mywebsite', 'true', { expires: 365 });
     setShowModal(false);
-    document.body.style.overflow = "scroll";
   };
 
   useEffect(() => {
-    const cookies = document.cookie.split(';');
-    const hasCookies = cookies.some((cookie) => cookie.trim().startsWith('mywebsite='));
-    setShowModal(!hasCookies);
-     console.log(cookies)
-      document.body.style.overflow = "hidden"
+    const hasCookieConsent = Cookies.get('mywebsite');
+    setShowModal(!hasCookieConsent);
     }
   , []);
 
@@ -74,7 +71,7 @@ function App() {
      
       <Routes>
         <Route path="/Lichtenberg" element={<Home />}></Route>
-        <Route path="/über" element={<UberUns />}></Route>
+        <Route path="/%C3%BCber" element={<UberUns />}></Route>
         <Route path="/aktuelles" element={<Aktuelles />}></Route>
         <Route path="/mitglied" element={<Mitglied />}></Route>
         <Route path="/kontakt" element={<Contact />}></Route>

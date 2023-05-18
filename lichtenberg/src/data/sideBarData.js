@@ -15,7 +15,7 @@ const sidebarData = [
   },
   {
     name: "Über uns",
-    ref: "/über",
+    ref: "/%C3%BCber",
     icon: <BiIcons.BiNetworkChart />,
     imgSource:uber
   },

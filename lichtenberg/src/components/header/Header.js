@@ -151,7 +151,7 @@ const [headerSmall ,setHeaderSmall] = useState(false);
                   className={`${classes["glitch"]} ${classes.g1}`}
                   data-glitch="glitch"
                 >
-                  <Link onClick={scrollUp} to="/über"> Über uns </Link>
+                  <Link onClick={scrollUp} to="/%C3%BCber"> Über uns </Link>
                 </div>
               </div>
             </li>

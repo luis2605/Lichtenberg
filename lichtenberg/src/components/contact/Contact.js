@@ -51,7 +51,7 @@ const fontSize = `${Math.min(maxFontSize, Math.max(minFontSize, newFontSize))}px
      <h4 className={classes["contact-subtitle"]}>Wir sind stolz darauf, eine enge und freundliche Gemeinschaft zu sein, die sich darauf konzentriert, das Leben in unserem Dorf so angenehm wie möglich zu gestalten. Wir freuen uns darauf, von Ihnen zu hören und helfen gerne bei allem, was wir können! </h4>
         </div>
         <div className={classes["contact-body"]}>
-            <h3 className={classes["indication"]}>Benutzen Sie bitte das unten stahende Formular</h3>
+            <h3 className={classes["indication"]}>Benutzen Sie bitte das unten stehende Formular</h3>
         <EmailForm/>
 
         </div>

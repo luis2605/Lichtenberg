@@ -15,10 +15,16 @@ return(
  
 
    <div  key={index}   className={classes["vorstand-element"]} >
-    <div className={classes["vorstand-img-container"] } >
-    <img src={blob} alt={vorst.name} className={classes["vorstand-blob"] } />
-    <img src={vorst.img} alt={vorst.name} className={classes["vorstand-img"] } />
-    </div>
+   
+   <div className={classes["vorstand-blob"] }>
+
+   <img src={vorst.img} alt={vorst.name} className={classes["vorstand-img"] } />
+   </div>
+    
+
+   
+   
+  
     
     <h2>{vorst.name}</h2>
     <h3>{vorst.position}</h3>

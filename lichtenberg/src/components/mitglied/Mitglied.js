@@ -5,7 +5,22 @@ import { Route, Routes, Link } from "react-router-dom";
 
 const Mitglied = () => {
    // scroll to the beginning of the page
-
+   const handleDownload = async () => {
+    try {
+      const response = await fetch('/lichtenberg/src/assets/pdf/Mitgliedsantrag.pdf', {
+        responseType: 'blob',
+      });
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Mitgliedsantrag.pdf';
+      link.click();
+    } catch (error) {
+      console.error('Error occurred while downloading the PDF:', error);
+    }
+  };
+  
    const scrollUp =()=>{
     window.scrollTo({
       top: 0,
@@ -24,7 +39,7 @@ const Mitglied = () => {
         <div className={classes["mitglied-buttons"]}>
         
      
-        <a className={classes["mitglied-btn"]} href={process.env.PUBLIC_URL + '/public/DGTNVorlageMitgliedsantrag.pdf'} download="DGTNVorlageMitgliedsantrag.pdf"> 📄 Download the pdf</a>
+        <button className={classes["mitglied-btn"]} onClick={handleDownload}> 📄 Download the pdf</button>
 
 
         <p className={classes["mitglied-btn"]}>
