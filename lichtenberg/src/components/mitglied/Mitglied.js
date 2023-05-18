@@ -2,14 +2,13 @@ import React ,{useEffect} from 'react'
 import classes from './mitglied.module.css'
 import einladung from '../../assets/img/einladung.webp'
 import { Route, Routes, Link } from "react-router-dom";
+import Mitgliedsantrag from '../../assets/pdf/Mitgliedsantrag.pdf';
 
 const Mitglied = () => {
    // scroll to the beginning of the page
    const handleDownload = async () => {
     try {
-      const response = await fetch('/lichtenberg/src/assets/pdf/Mitgliedsantrag.pdf', {
-        responseType: 'blob',
-      });
+      const response = await fetch(Mitgliedsantrag);
       const blob = await response.blob();
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
@@ -44,7 +43,7 @@ const Mitglied = () => {
 
         <p className={classes["mitglied-btn"]}>
   {" "}
-  <Link onClick={scrollUp} to="/über"> ◻️ Zurück </Link>
+  <Link onClick={scrollUp} to="/%C3%BCber"> ◻️ Zurück </Link>
 </p>
 
         </div>
