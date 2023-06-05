@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Lichtenberg/static/css/main.eaca9afe.css",
-    "main.js": "/Lichtenberg/static/js/main.0e344359.js",
+    "main.js": "/Lichtenberg/static/js/main.1508e8f9.js",
     "static/js/787.ac2701de.chunk.js": "/Lichtenberg/static/js/787.ac2701de.chunk.js",
     "static/media/Pfarrheim-Lichtenberg_26.03.2017_002_FotoCBuchen.webp": "/Lichtenberg/static/media/Pfarrheim-Lichtenberg_26.03.2017_002_FotoCBuchen.bbb9bd34bc002fcd6288.webp",
     "static/media/Rinnchen-Lichtenberg_13.09.2011_005FotoCBuchen.webp": "/Lichtenberg/static/media/Rinnchen-Lichtenberg_13.09.2011_005FotoCBuchen.f47e6494318484fe9c3f.webp",
@@ -55,11 +55,11 @@
     "index.html": "/Lichtenberg/index.html",
     "static/media/blob.svg": "/Lichtenberg/static/media/blob.182f76a935d1ed7b1a4f8ed54efc7332.svg",
     "main.eaca9afe.css.map": "/Lichtenberg/static/css/main.eaca9afe.css.map",
-    "main.0e344359.js.map": "/Lichtenberg/static/js/main.0e344359.js.map",
+    "main.1508e8f9.js.map": "/Lichtenberg/static/js/main.1508e8f9.js.map",
     "787.ac2701de.chunk.js.map": "/Lichtenberg/static/js/787.ac2701de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eaca9afe.css",
-    "static/js/main.0e344359.js"
+    "static/js/main.1508e8f9.js"
   ]
 }
